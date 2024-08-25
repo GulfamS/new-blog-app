@@ -3,7 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    background-image: radial-gradient(rgb(250, 100, 242), rgb(245, 245, 138), rgb(66, 212, 235));
+    background-size: cover;
 }
+
 
 .load{
     align-self: center;

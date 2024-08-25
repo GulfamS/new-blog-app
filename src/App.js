@@ -1,15 +1,16 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import BlogsList from "./components/BlogsList";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Header from "./components/Header";
-import BlogItemDetails from "./components/BlogItemDetails";
+import BlogList from "./components/BlogsList";
+import AboutBlogDetails from "./components/AboutBlogDetails";
+
 const App = () =>(
-  <BrowserRouter>
-  <Header/>
-  <Routes>
-  <Route exact path="/" component={BlogsList} />
-  <Route path="/blogs/:id" component={BlogItemDetails} />
-  </Routes>
-  </BrowserRouter>
+  <Router>
+    <Header/>
+    <Routes>
+      <Route path="/" element={<BlogList/>}/>
+      <Route path="/about" element={<AboutBlogDetails/>}/>
+    </Routes>
+  </Router>
 )
 
 export default App;

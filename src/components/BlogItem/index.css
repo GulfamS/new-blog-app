@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
   }
   
 .image{
@@ -39,7 +40,7 @@
     font-weight: 700;
     margin-left: 70px;
 }
-  
+
 .blogs-details-container {
     display: flex;
     flex-direction: column;
@@ -49,6 +50,10 @@
   
 .blog-title {
     font-family: Roboto;
-    font-size: 10px;
+    font-size: 18px;
     color: rgb(10, 8, 76);
+}
+
+.blog-item-link {
+    text-decoration: none;
 }
